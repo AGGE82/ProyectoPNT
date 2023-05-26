@@ -370,8 +370,7 @@ footer > h5{
 
     section.seccion1{
         height: 200vh;
-        background-image:  url("/images/sflip.jpg");
-        background-size: cover;
+        background-color: lightcoral;
     }
 
 
