@@ -88,7 +88,9 @@ section.Header > header{
 }
 section.Header > header > article > h1{
     font-family: "Lastica", sans-serif;
-    font-size: 56px;  
+    padding: 80px;
+    font-size: 5.5em;  
+    padding-bottom:0% ;
 }
 section.Header > header > article > h4{
     font-size: 26px;
@@ -235,15 +237,15 @@ section.seccion4{
   background-image:  url("/images/sflip.jpg");
     background-size: cover;
     font-family: "TT Interphases", sans-serif;
-    font-size: 14px;
+    font-size: 1.3em;
     color: #f5f5f5;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-section.seccion4 > h2{
+section.seccion4 > section > h2{
     font-family: "Lastica", sans-serif;
-    font-size: 36px;
+    font-size: 3.5em;
 }
 section.seccion4 >section> article{
     display: flex;
@@ -255,9 +257,9 @@ section.seccion4 >section> article{
 section.seccion4 > section{
     justify-self: center;
     width: 40%;
-   display: flex;
-   justify-content: space-evenly; 
-   flex-direction: column;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: column;
 }
 
 section.seccion4 >section> article > h5{
@@ -345,17 +347,23 @@ footer > h1{
     font-size: 70px;
 }
 footer > h6{
-    font-family: "Helios", sans-serif;
+    font-family: "Lastica", sans-serif;
     font-size: 13px; 
 }
 footer > p{
-    font-family: "Public Sans Thin", sans-serif;
+    font-family: "Lastica", sans-serif;
 }
 footer > h5{
-    font-family: "Neue Mchina Light", sans-serif;
+    font-family: "Lastica", sans-serif;
     font-size: 12px;
 }
-
+footer > article > a > button{
+    width: 100%;
+    background-color: transparent;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    border-style: solid;
+}
 @media (max-width: 920px){
 /* Estilos responsive Movile */
 
@@ -366,12 +374,26 @@ footer > h5{
         background-image:  url("/images/s.jpg");
         background-size: cover;
     }
+    section.Header > header > article > h1{
+        font-family: "Lastica", sans-serif;
+        font-size: 56px;  
+        padding: 80px;
+        padding-bottom: 0%;
+    }
+    section.Header > header > article > h1{
+        font-family: "Lastica", sans-serif;
+        font-size: 56px;  
+        padding: 80px;
+        padding-bottom: 0%;
+    }
 
 /*-- Estilos responsive para la seccion 1 --*/
 
     section.seccion1{
+
+        background-image:  url("/images/sflip.jpg");
+        background-size: cover;
         height: 200vh;
-        background-color: lightcoral;
     }
 
 
@@ -462,9 +484,15 @@ footer > h5{
 /*-- Estilos responsive para la seccion 4 --*/
 
     section.seccion4{
-        height: 200vh;
+        height: 100vh;
         background-image:  url("/images/s.jpg");
         background-size: cover;
+    }
+    section.seccion4 > h2{
+        font-size: 3em;
+    }
+    section.seccion4 > h2{
+        font-size: 3em;
     }
 
 /*-- Estilos responsive para la seccion 5 --*/
@@ -522,9 +550,10 @@ footer > h5{
 /*-- Estilos responsive para Footer --*/
 
     footer{
-        height: 100vh;
+        height: 70vh;
         background-image:  url("/images/s.jpg");
         background-size: cover;
     }
+    
 
 }
