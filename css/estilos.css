@@ -148,8 +148,8 @@ section.seccion2{
 }
 section.seccion2 > h2{
     display: flex;
+    font-family: Lastica;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
     justify-content: center;
     /*border: dotted black;*/
@@ -207,6 +207,7 @@ section.seccion3{
     align-items: center;
 }
 section.seccion3 > h2{
+    font-family: Lastica;
     margin-left: 20%;
     color: white;
     align-self: flex-start;
@@ -383,23 +384,21 @@ footer > h5{
         background-image:  url("/images/s.jpg");
         background-size: cover;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     section.seccion2 > h2{
         display: flex;
         color: white;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Lastica;
         font-size: 60px;
         justify-content: center;
-        border: dotted black;
     }
     
     section.contenido{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        border: dotted red;
     }
     section.contenido > article{
         height: 50vh;
@@ -417,7 +416,6 @@ footer > h5{
         display: flex;
         flex-wrap: wrap;
         background-color: white;
-        border: dotted green;
     }
     section.contenido > article > section.pregunta{
         height: 40%;
@@ -425,7 +423,6 @@ footer > h5{
         flex-wrap: wrap;
         display: flex;
         background-color: #D73CBE;
-        border: dotted rgb(43, 104, 128);
     }
 
 /*-- Estilos responsive para la seccion 3 --*/
@@ -441,6 +438,7 @@ footer > h5{
         align-items: center;
     }
     section.seccion3 > h2{
+        font-family: Lastica;
         margin-left: 20%;
         color: white;
         align-self: flex-start;
@@ -448,8 +446,8 @@ footer > h5{
     }
     section.seccion3 > section{
         display: flex;
-        flex-direction: row;
-        column-gap: 80px;
+        flex-direction: column;
+        row-gap: 60px;
     }
     section.seccion3 > section > article{
         display: flex;
@@ -476,7 +474,50 @@ footer > h5{
         height: 200vh;
         background-image:  url("/images/sflip.jpg");
         background-size: cover;
+        display: flex;
+        flex-direction: row;
+        background-size: cover;
     }
+    section.seccion5 > section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        column-gap: 70px;
+        align-items: center;
+    }
+    section.seccion5 > section > article:first-child{
+        display: flex;
+        justify-items: center;
+        padding: 30px;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 35%;
+        border-color: white;
+        border-style: solid;
+    }
+    section.seccion5 > section > article > button{
+        height: 30px;
+        width: 180px;
+        background-color: #D73CBE;
+        color: white;
+        border-color: #D73CBE;
+        border-radius: 10px;
+    }
+    article.video{
+        /*imagen atras del video*/
+        background-image: url("/images/pelotagif1.gif");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        min-height: 450px;
+        border: none;
+    
+    }
+    iframe{
+        /*radio al video*/
+        border-radius: 50%;
+    }
+    
 
 /*-- Estilos responsive para Footer --*/
 
